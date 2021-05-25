@@ -10,5 +10,5 @@
 
 
 # Observações:
-Não é possível rodar o jar da solução com o Docker ligado, a vm não suporta.
-O arquivo baixado pelo wget no script Fluid.sh vem corrompido.
+- Não é possível rodar o jar da solução com o Docker ligado, a vm não suporta.
+- O arquivo baixado pelo wget no script Fluid.sh vem corrompido, utilize os que estão na pasta Jar
