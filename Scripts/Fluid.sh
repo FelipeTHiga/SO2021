@@ -11,7 +11,7 @@ instalar_java()
 	echo "[Bot assistente]: Iniciando instalação da versão 11 do Java"
 	echo "[Bot assistente]: Criando repositório..."
 	sleep 2
-	#sudo add-apt-repository ppa:webupd8team/java -y
+
 	clear
 	echo "[Bot assistente]: Atualizando pacotes..."
 	sleep 2
@@ -80,7 +80,7 @@ sudo docker pull mysql:8.0.16
 
 sudo chmod 777 /var/run/docker.sock
 
-echo "[Bot assistente]: Criando imagem do Mysql..."
+echo "[Bot assistente]: Criando container do Mysql..."
 
 sudo docker run -d -p 3306:3306 --name containerMysql -e "MYSQL_DATABASE=bdFluid" -e "MYSQL_ROOT_PASSWORD=#Gfgrupo9" mysql:8.0.16
 
