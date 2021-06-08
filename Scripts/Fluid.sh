@@ -33,7 +33,6 @@ echo "[Bot assistente]: Iniciando verificação de requisitos"
 echo "[Bot assistente]: Verificando instalação do Java..."
 
 var=$((java -version) 2>&1 | awk -F '"' '/version/ {print $2}')
-echo $var
 if [[ "$var" >"0" ]]
     then
 		echo "Você possui o java instalado"    
@@ -69,12 +68,6 @@ if [[ "$var" >"0" ]]
 		fi					
 fi
 
-echo "[Bot assistente]: Criando repositório Fluid..."
-mkdir /home/${USER}/Desktop/Fluid
-echo "[Bot assistente]: Baixando arquvios..."
-wget 'https://github.com/FelipeTHiga/SO2021/blob/3f8cf32da58b9f2279e33e8a86332649bfcc9d3c/Fluid.jar' -P /home/${USER}/Desktop/Fluid
-
-
 echo "[Bot assistente]: Configurando o Docker... "
 sudo apt update
 sudo apt install docker.io
@@ -85,7 +78,7 @@ sudo systemctl enable docker
 echo "[Bot assistente]: Baixando imagem do Mysql "
 sudo docker pull mysql:8.0.16
 
-sudo chmod 666 /var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 
 echo "[Bot assistente]: Criando imagem do Mysql..."
 
@@ -96,3 +89,13 @@ sleep 5
 clear
 echo "[Bot assistente]: Banco configurado"
 
+echo "[Bot assistente]: Criando repositórios..."
+mkdir /home/${USER}/Desktop/Fluid/Jar
+mkdir /home/${USER}/Desktop/Fluid/Logs
+echo "[Bot assistente]: Baixando arquvios..."
+wget 'https://github.com/FelipeTHiga/SO2021/raw/3f8cf32da58b9f2279e33e8a86332649bfcc9d3c/Fluid.jar' -P /home/${USER}/Desktop/Fluid/Jar
+
+sleep 2
+
+clear
+echo "[Bot assistente]: Instalação finalizada com sucesso"
