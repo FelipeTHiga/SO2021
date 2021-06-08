@@ -93,7 +93,7 @@ echo "[Bot assistente]: Criando repositórios..."
 mkdir /home/${USER}/Desktop/Fluid/Jar
 mkdir /home/${USER}/Desktop/Fluid/Logs
 echo "[Bot assistente]: Baixando arquvios..."
-wget 'https://github.com/FelipeTHiga/SO2021/raw/3f8cf32da58b9f2279e33e8a86332649bfcc9d3c/Fluid.jar' -P /home/${USER}/Desktop/Fluid/Jar
+wget 'https://github.com/FelipeTHiga/SO2021/raw/main/Jars/Fluid.jar' -P /home/${USER}/Desktop/Fluid/Jar
 
 sleep 2
 
