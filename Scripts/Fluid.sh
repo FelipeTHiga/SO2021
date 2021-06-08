@@ -91,7 +91,6 @@ echo "[Bot assistente]: Banco configurado"
 
 echo "[Bot assistente]: Criando repositórios..."
 mkdir /home/${USER}/Desktop/Fluid/Jar
-mkdir /home/${USER}/Desktop/Fluid/Log
 echo "[Bot assistente]: Baixando arquvios..."
 wget 'https://github.com/FelipeTHiga/SO2021/raw/main/Jars/Fluid.jar' -P /home/${USER}/Desktop/Fluid/Jar
 
